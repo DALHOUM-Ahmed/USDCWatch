@@ -17,6 +17,16 @@ Monitors USDC transfers in real-time, handles chain reorgs, prevents duplicates,
 
 ## Setup
 
+Requires Rust 1.70+ and SQLite dev libraries:
+
+```bash
+# Install Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Install SQLite (Linux only)
+sudo apt install libsqlite3-dev  # Ubuntu/Debian
+```
+
 Set your RPC endpoint in `.env`:
 
 ```bash
